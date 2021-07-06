@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+body {
+	@apply bg-gray-400 antialiased;
+	font-family: "Roboto";
+	max-height: 100vh;
+}
+
+#drum-machine {
+	position: relative;
+	top: 6rem;
+}
+
+.drum-pad {
+	min-width: 10rem;
+	@apply border-2 border-black rounded-md text-center py-12 text-5xl;
+	&:hover {
+		cursor: pointer;
+		@apply bg-yellow-500;
+	}
+}
+
+.settings {
+	@apply py-6 text-2xl;
+}
